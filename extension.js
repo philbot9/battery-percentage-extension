@@ -16,8 +16,16 @@ function getPower() {
     return Main.panel.statusArea["aggregateMenu"]._power;
 }
 
+function batteryIsCharging(power) {
+    return power.IsPresent ? power.TimeToFull !== 0 : false;
+}
+
+function batteryIsDischarging(power) {
+    return power.IsPresent ? power.TimeToEmpty !== 0 : false;
+}
+
 function _onPowerChanged() {
-    if (this._proxy.IsPresent) {
+    if (batteryIsCharging(this._proxy) || batteryIsDischarging(this._proxy)) {
         percentageText.set_text("%d%%".format(this._proxy.Percentage));
         percentageText.show();
     } else {
