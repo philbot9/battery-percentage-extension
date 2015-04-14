@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist gettext-domain="minimum-workspaces">
+  <schema id="org.gnome.shell.extensions.battery-percentage" path="/org/gnome/shell/extensions/battery-percentage/">
+    <key type="b" name="hide-when-full">
+      <default>false</default>
+      <summary>Hide when full</summary>
+      <description>Hide the percentage when the battery is fully charged.</description>
+    </key>
+  </schema>
+</schemalist>

@@ -4,5 +4,6 @@
 	"name": "Battery Percentage",
 	"description": "Show battery remaining power percentage at the top panel",
 	"url": "https://github.com/eagleoneraptor/battery-percentage-extension",
-	"original-authors": ["damiannohales@gmail.com"]
+	"original-authors": ["damiannohales@gmail.com"],
+  "settings-schema": "org.gnome.shell.extensions.battery-percentage"
 }
